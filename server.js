@@ -4,8 +4,12 @@ const port = 3001;
 
 const countryRoutes = require('./routes/countryRoutes');
 const errorHandling = require('./middleware/errorHandling');
+const requestLogger = require('./middleware/requestLogger');
 
 app.use(express.json());
+
+// Request logging middleware
+app.use(requestLogger);
 
 // Routes
 app.use('/', countryRoutes);

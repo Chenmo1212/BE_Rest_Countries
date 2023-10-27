@@ -10,7 +10,6 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -24,6 +23,8 @@ The Country Information API is a Node.js and Express.js-based application that p
 * [Node.js](https://nodejs.org/)
 * [Express.js](https://expressjs.com/)
 * [Axios](https://axios-http.com/)
+* [Jest](https://jestjs.io/)
+- [Supertest](https://www.npmjs.com/package/supertest)
 
 ## Getting Started
 
@@ -78,9 +79,10 @@ http://localhost:3001/country/{country-name}
 
 - [x] Implement basic API functionality 
 - [x] Add error handling and logging
+- [x] Add automated test
 - [ ] Implement authentication and authorization
 - [ ] Add support for additional data fields
-See the [open issues](/) for a list of proposed features and known issues.
+See the [open issues](https://github.com/Chenmo1212/BE_Rest_Countries/issues) for a list of proposed features and known issues.
 
 ### Contributing
 Contributions are welcome! Here's how you can get involved:
@@ -100,3 +102,5 @@ Here are some resources and tools that were used in the development of this proj
 - Node.js 
 - Express.js 
 - Axios
+- Jest
+- Supertest

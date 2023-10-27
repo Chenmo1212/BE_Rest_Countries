@@ -24,7 +24,7 @@ The Country Information API is a Node.js and Express.js-based application that p
 * [Express.js](https://expressjs.com/)
 * [Axios](https://axios-http.com/)
 * [Jest](https://jestjs.io/)
-- [Supertest](https://www.npmjs.com/package/supertest)
+* [Supertest](https://www.npmjs.com/package/supertest)
 
 ## Getting Started
 

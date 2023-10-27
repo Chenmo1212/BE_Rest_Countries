@@ -17,8 +17,12 @@ const getAllCountries = async () => {
 };
 
 const getCountryData = async (name) => {
-  const response = await api.get(`/name/${name}?fullText=true`);
-  return response.data;
+  try {
+    const response = await api.get(`/name/${name}?fullText=true`);
+    return response.data;
+  } catch (e) {
+    throw e;
+  }
 };
 
 module.exports = { getAllCountries, getCountryData };

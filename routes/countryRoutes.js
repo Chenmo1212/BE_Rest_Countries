@@ -6,11 +6,9 @@ const countryController = require('../controllers/countryController');
 router.get('/all', countryController.getAllCountries);
 
 // Define a route to fetch country information
-router.get('/:name', countryController.getCountryData);
+router.get('/country/:name', countryController.getCountryData);
 
 // Define a route for API instructions
-router.get('/', (req, res) => {
-    return res.json("hello")
-});
+router.get('/', countryController.getInstructions);
 
 module.exports = router;

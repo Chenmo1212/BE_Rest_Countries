@@ -6,7 +6,7 @@ const getInstructions = (req, res) => {
         message: 'Welcome to the Rest Country Information API',
         endpoints: {
             getAllCountries: '/all - Get a list of all countries',
-            getCountryData: '/:name - Get information about a specific country by name',
+            getCountryData: '/country/:name - Get information about a specific country by name',
         },
     };
     res.json(instructions);
@@ -27,7 +27,7 @@ const getCountryData = async (req, res) => {
         const countryData = await countryService.getCountryData(countryName);
         res.json(countryData);
     } catch (error) {
-        if (error.response.data.status === 404) return res.status(301).json({error: "Not Found"})
+        if (error.response === undefined || error.response.data.status === 404) return res.status(301).json({error: "Not Found"})
         res.status(500).json({ error: 'Internal server error' });
     }
 };

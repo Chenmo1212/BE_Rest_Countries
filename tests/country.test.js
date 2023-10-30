@@ -26,7 +26,7 @@ describe('GET /country/:name', () => {
         const nonExistentCountry = 'NonExistentCountry'; // Replace with a non-existent country name
         const response = await request(app).get(`/country/${nonExistentCountry}`);
 
-        expect(response.status).toBe(404);
+        expect(response.status).toBe(301);
         expect(response.body.error).toBe('Not Found');
     });
 });

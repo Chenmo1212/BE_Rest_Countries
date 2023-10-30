@@ -6,7 +6,7 @@ const getInstructions = (req, res) => {
         message: 'Welcome to the Rest Country Information API',
         endpoints: {
             getAllCountries: '/all - Get a list of all countries',
-            getCountryData: '/:name - Get information about a specific country by name',
+            getCountryData: '/country/:name - Get information about a specific country by name',
         },
     };
     res.json(instructions);
